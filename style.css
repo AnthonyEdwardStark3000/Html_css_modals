@@ -1,0 +1,64 @@
+body
+{
+    font-family: fantasy;
+    font-size: 21;
+    font-weight: bold;
+    line-height:1.5;
+}
+
+
+.button:hover
+{
+    background-color: aliceblue;
+}
+
+#modal
+{
+    display:none;
+    position: fixed;
+    z-index: 1; /*order of elements */
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content
+{
+    /* background-color:aliceblue; */
+    margin: 20% auto;
+    padding: 25px;
+    width:50%;
+    height:30%;
+    box-shadow: 6px 14px 20px -8px rgba(0,0,0,0.72);
+-webkit-box-shadow: 6px 14px 20px -8px rgba(0,0,0,0.72);
+-moz-box-shadow: 6px 14px 20px -8px rgba(0,0,0,0.72);
+/*key frames meant for animation during modal pop-up*/
+animation-name:modalopen;
+animation-duration:1;
+
+}
+
+.closebtn
+{
+    display:flex;
+    text-align: flex-end;
+    color: red;
+    /* float:right; */
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.closebtn:hover,.closebtn:focus
+{
+    color:black;
+    cursor:pointer;
+}
+
+@keyframes modalopen
+{
+     from {opacity: 0}
+     to {opacity: 0}
+}
